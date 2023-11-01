@@ -1,0 +1,292 @@
+object Form1: TForm1
+  Left = 1003
+  Height = 610
+  Top = 268
+  Width = 515
+  Caption = 'PERHITUNGAN BARANG'
+  ClientHeight = 610
+  ClientWidth = 515
+  DesignTimePPI = 120
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -24
+  Font.Name = 'Dubai'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Font.Style = [fsBold]
+  object Label1: TLabel
+    Left = 42
+    Height = 40
+    Top = 24
+    Width = 416
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'PERHITUNGAN PENJUALAN BARANG'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 42
+    Height = 38
+    Top = 100
+    Width = 131
+    AutoSize = False
+    Caption = 'Kode Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai Medium'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 42
+    Height = 40
+    Top = 160
+    Width = 131
+    AutoSize = False
+    Caption = 'Quantity'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai Medium'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 42
+    Height = 40
+    Top = 216
+    Width = 131
+    AutoSize = False
+    Caption = 'Nama Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai Medium'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label4Click
+  end
+  object Label5: TLabel
+    Left = 42
+    Height = 40
+    Top = 272
+    Width = 131
+    AutoSize = False
+    Caption = 'Harga Satuan'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai Medium'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 42
+    Height = 40
+    Top = 328
+    Width = 131
+    AutoSize = False
+    Caption = 'Sub Total'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai Medium'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 42
+    Height = 40
+    Top = 384
+    Width = 131
+    AutoSize = False
+    Caption = 'Diskon'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai Medium'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 42
+    Height = 40
+    Top = 440
+    Width = 131
+    AutoSize = False
+    Caption = 'Total Bayar'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai Medium'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object CBKode: TComboBox
+    Left = 245
+    Height = 42
+    Top = 96
+    Width = 212
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ItemHeight = 34
+    Items.Strings = (
+      'A01'
+      'B02'
+      'C03'
+      'D04'
+    )
+    ParentFont = False
+    TabOrder = 0
+  end
+  object EQTY: TEdit
+    Left = 245
+    Height = 40
+    Top = 160
+    Width = 214
+    AutoSize = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+  end
+  object ENama: TEdit
+    Left = 245
+    Height = 40
+    Top = 216
+    Width = 214
+    AutoSize = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+  end
+  object EHarga: TEdit
+    Left = 245
+    Height = 40
+    Top = 272
+    Width = 212
+    AutoSize = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+  end
+  object ESubTotal: TEdit
+    Left = 245
+    Height = 40
+    Top = 328
+    Width = 212
+    AutoSize = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+  end
+  object EDiskon: TEdit
+    Left = 245
+    Height = 40
+    Top = 384
+    Width = 212
+    AutoSize = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+  end
+  object ETotal: TEdit
+    Left = 245
+    Height = 40
+    Top = 440
+    Width = 212
+    AutoSize = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+  end
+  object btnHitung: TButton
+    Left = 40
+    Height = 44
+    Top = 520
+    Width = 128
+    Caption = 'Hitung'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = btnHitungClick
+    ParentFont = False
+    TabOrder = 7
+  end
+  object btnUlang: TButton
+    Left = 188
+    Height = 44
+    Top = 520
+    Width = 128
+    Caption = 'Ulang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = btnUlangClick
+    ParentFont = False
+    TabOrder = 8
+  end
+  object btnKeluar: TButton
+    Left = 329
+    Height = 44
+    Top = 520
+    Width = 128
+    Caption = 'Keluar'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = btnKeluarClick
+    ParentFont = False
+    TabOrder = 9
+  end
+end
